@@ -82,3 +82,10 @@ We can:
 3. See other students studying
 4. Send basic chat messages
 5. Leave and rejoin without errors
+
+---
+
+## 7. Product Areas (SaaS structure)
+- Marketing (public): landing page, pricing, about, contact, privacy, terms
+- Auth (public): sign-in, sign-up, onboarding
+- App (protected): rooms list, room page, profile, settings
