@@ -48,24 +48,31 @@ When generating code:
 
 ---
 
-## 5. Folder Structure (Initial)
-
-app/
-  layout.tsx
-  page.tsx
-  (auth)/
-  (rooms)/
-components/
-lib/
-  db.ts
-  auth.ts
-  rooms.ts
-
----
-
-## 6. Code Quality
+## 7. Code Quality
 
 - Use TypeScript properly (no `any` unless unavoidable).
 - Validate user input.
 - Handle errors clearly.
 - Keep naming consistent.
+
+---
+
+## 8. Where code must go
+- app/ = routes, pages, layouts, route handlers
+- components/ = UI components only (no DB calls here)
+- lib/ = auth, DB queries, realtime helpers, utilities
+- lib/db/queries/ = all database reads/writes
+- lib/validators/ = input validation (zod)
+
+---
+
+## 9. Boundaries
+- No DB queries inside reusable UI components.
+- No new libraries without discussion.
+
+---
+
+## 10. Route groups
+- (marketing) = public marketing pages
+- (auth) = sign in/up/onboarding
+- (app) = protected product pages (requires auth)

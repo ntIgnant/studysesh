@@ -22,7 +22,7 @@
 
 ## Phase 3: Study Rooms
 
-- [ ] Create room model
+- [ ] Create room table
 - [ ] Room creation page
 - [ ] Room listing page
 - [ ] Join/Leave functionality
@@ -32,15 +32,15 @@
 ## Phase 4: Realtime Presence
 
 - [ ] Show active users in room
-- [ ] Realtime updates when someone joins
+- [ ] Realtime updates when someone joins/leaves
 - [ ] Basic text chat
 
 ---
 
-## Definition of Done for MVP
+## Definition of Done (MVP)
 
-- User can sign up
-- Create or join a room
-- See others in room
-- Chat works
-- No critical errors
+- [ ] User can sign up
+- [ ] User can create or join a room
+- [ ] User can see others in the room
+- [ ] Chat works without refresh
+- [ ] No critical errors
